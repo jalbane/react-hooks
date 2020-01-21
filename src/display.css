@@ -1,10 +1,19 @@
 .todo-text{
-	width: 400px;	
+	width: 500px;	
 	border-bottom: solid 2px gray;
+	font-size: 20px;
 }
 
-span {
-	position: relative;
-	left: 325px;
-	text-align: right;
+.btn {
+	position: absolute;
+	left: 432px;
+}
+
+button{
+	width: 73px;
+}
+
+.time-stamp{
+	font-size: 10px;
+	font-weight: bold;
 }
