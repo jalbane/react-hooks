@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
-import './App.css';
-import Display from './Display';
+import '../App.css';
+import Display from '../Components/Display';
 
 function App() {
-  const [todoText, setTodoText] = useState([
-  ]);
+  const [todoText, setTodoText] = useState([]);
 
   const addTodo = text => {
     const completed = false

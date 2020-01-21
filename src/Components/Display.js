@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import './display.css'
+import '../display.css'
 
 export default function Display(props){
-	let [date, setDate] = useState(Date())
+	let [date, setDate] = useState(Date());
 
 	const displayDate = () => {
 		date = date.split('GMT');
