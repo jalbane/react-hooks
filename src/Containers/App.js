@@ -42,17 +42,18 @@ function App() {
 
     return(
       <form onSubmit = {handleSubmit}>
-        <input style= {{width: 390}} placeholder = 'Add a Todo...' value = {value.text} onChange = { (e) =>setValue([e.target.value])} />
+        <input style= {{width: 396, padding: 0}} placeholder = 'Add a Todo...' value = {value.text} onChange = { (e) =>setValue([e.target.value])} />
       </form>
       );
   }
  
   return (
-  
-  <div className = 'app'>
+  <div className = 'App'>
+    <div className = 'banner'>
+      <h1 className = 'header'> To-do list / chat log </h1>
+    </div>
     <div className = 'todo-list'>
       { todoText.map( (index, i) => <Display text = {index.text} completed = {index.completed} index = {i} key = {index.text} handleComplete = {completeTask} handleDelete = {deleteTask}/> )}
-      
       <AddTodo addTodo={addTodo}/>
     </div>
   </div>

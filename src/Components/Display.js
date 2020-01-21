@@ -15,8 +15,8 @@ export default function Display(props){
 						fontSize: 12
 					 }}>
 			{ props.completed 
-			 ? <div className = 'btn'><button onClick = {() => props.handleDelete(props.index)}> Delete </button></div>
-			 : <div className = 'btn'><button onClick = {() => props.handleComplete(props.index)}> Complete </button></div>
+			 ? <div className = 'btn'><button onClick = {() => props.handleDelete(props.index)}> Delete Task</button></div>
+			 : <div className = 'btn'><button onClick = {() => props.handleComplete(props.index)}> Complete Task</button></div>
 			}
 			<div className = 'time-stamp'>
 				{displayDate()}
