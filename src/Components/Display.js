@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import '../display.css';
 
 export default function Display(props){
-	let [date, setDate] = useState(Date());
+	let [date] = useState(Date());
 
 	const displayDate = () => {
 		date = date.split('GMT');
