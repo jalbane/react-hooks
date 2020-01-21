@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../display.css'
+import '../display.css';
 
 export default function Display(props){
 	let [date, setDate] = useState(Date());
@@ -15,12 +15,14 @@ export default function Display(props){
 						fontSize: 12
 					 }}>
 			{ props.completed 
-			 ? <span><button onClick = {() => props.handleDelete(props.index)}> Delete </button></span>
-			 : <span><button onClick = {() => props.handleComplete(props.index)}> Complete </button></span>
+			 ? <div className = 'btn'><button onClick = {() => props.handleDelete(props.index)}> Delete </button></div>
+			 : <div className = 'btn'><button onClick = {() => props.handleComplete(props.index)}> Complete </button></div>
 			}
-			<div className = 'todo-text'> 
+			<div className = 'time-stamp'>
 				{displayDate()}
-				<br></br>
+			</div>
+			<br></br>
+			<div className = 'todo-text'> 
 				{props.text}  
 			</div>
 		</div>
