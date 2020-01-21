@@ -1,0 +1,10 @@
+.todo-text{
+	width: 400px;	
+	border-bottom: solid 2px gray;
+}
+
+span {
+	position: relative;
+	left: 325px;
+	text-align: right;
+}

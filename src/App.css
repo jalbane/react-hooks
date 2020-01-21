@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.app{
+  background: #209cee;
+  padding: 30px;
+  height: 100vh;
+  white-space: pre;
+}
+
+.todo-list {
+  background: #e8e8e8;
+  border-radius: 4px;
+  padding: 5px;
+  width: 400px;
+  white-space: pre-line;
+}
