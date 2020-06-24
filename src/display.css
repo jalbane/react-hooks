@@ -1,12 +1,14 @@
 .todo-text{
 	width: 500px;	
 	border-bottom: solid 2px gray;
-	font-size: 20px;
+	padding-bottom: 2px;
+	font-size: 24px;
 }
 
 .btn {
 	position: absolute;
-	left: 432px;
+	left: 430px;
+	padding-top: 28px; 
 }
 
 button{
@@ -14,6 +16,6 @@ button{
 }
 
 .time-stamp{
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: bold;
 }

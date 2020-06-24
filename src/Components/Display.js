@@ -5,7 +5,7 @@ export default function Display(props){
 	let [date] = useState(Date());
 
 	const displayDate = () => {
-		date = date.split('GMT');
+		date = date.split("GMT");
 		return date[0];
 	}
 
