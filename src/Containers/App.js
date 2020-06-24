@@ -42,7 +42,7 @@ function App() {
 
     return(
       <form onSubmit = {handleSubmit}>
-        <input style= {{width: '99%', padding: 0, height: 45, fontSize: 24}} placeholder = 'Enter in an item or message...' value = {value.text} onChange = { (e) =>setValue([e.target.value])} />
+        <input style= {{width: '99%', padding: 0, height: 45, fontSize: 24}} placeholder = 'Enter in an item or message...' value = {value.text} onChange = { (e) =>setValue([e.target.value])} method = "post"/>
       </form>
       );
   }
