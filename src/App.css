@@ -26,27 +26,26 @@
   position: relative;
   margin: auto;
   white-space: pre;
-  background: #e8e8e8;
-  border-radius: 4px;
-  padding: 5px;
-  width: 500px;
+  background: #c6c6c6;
+  width: 35%;
+  padding: 15px;
   white-space: pre-line;
   margin-bottom: 5px;
+  border: solid black 1px;
+  box-shadow: 0px 3px 4px;
+  border-top-style: none;
 }
 
 .header{
   background-color: white;
-  padding: 5px;
-  border-bottom: solid 2px;
-  border-radius: 4px;
-  box-shadow: 2px 2px 5px;
+  box-shadow: 1px 5px 4px;
   text-align: center;
-  margin: auto;
-  width: 20%;
+  margin: 15px;
 }
 
 .banner{
-  position: relative;
+  width: 20%;
   margin: auto;
-  padding: 15px;
+  margin-top: 15px;
 }
+

@@ -40,9 +40,15 @@ function App() {
       setValue('');
     }
 
+    React.useEffect( () => {
+      localStorage.setItem('myValueInLocalStorage', value);
+    }, [value]);
+
+    const onChange = event => setValue(event.target.value);
+
     return(
       <form onSubmit = {handleSubmit}>
-        <input style= {{width: '99%', padding: 0, height: 45, fontSize: 24}} placeholder = 'Enter in an item or message...' value = {value.text} onChange = { (e) =>setValue([e.target.value])} method = "post"/>
+        <input style= {{width: '99.4%', padding: 0, height: 45, fontSize: 24}} placeholder = 'Enter in an item or message...' value = {value.text} onChange = { (e) =>setValue([e.target.value])} method = "post"/>
       </form>
       );
   }
