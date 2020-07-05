@@ -6,12 +6,7 @@
 
 .btn {
 	position: absolute;
-	left: 87%;
-	padding-top: 28px; 
-}
-
-button{
-	width: 73px;
+	left: 82%;
 }
 
 .time-stamp{
@@ -20,6 +15,7 @@ button{
 }
 
 #main{
+	width: 100%;
 	background-color: whitesmoke;
 }
 

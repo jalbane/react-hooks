@@ -28,7 +28,7 @@
   white-space: pre;
   background: #c6c6c6;
   width: 35%;
-  padding: 15px;
+  padding: 1%;
   white-space: pre-line;
   margin-bottom: 5px;
   border: solid black 1px;
@@ -37,15 +37,15 @@
 }
 
 .header{
-  background-color: white;
-  box-shadow: 1px 5px 4px;
+  background-color: whitesmoke;
+  width: 20%;
+  margin-left: 31.5%; /*width of .todo-list minus the padding(1% of 35)*/
   text-align: center;
-  margin: 15px;
+  margin-bottom: 0px;
+  border-bottom: solid black 1px;
 }
 
 .banner{
-  width: 20%;
-  margin: auto;
-  margin-top: 15px;
+  width: 100%;
 }
 

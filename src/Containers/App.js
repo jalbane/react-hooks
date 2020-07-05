@@ -35,8 +35,18 @@ function App() {
 
     const handleSubmit = e => {
       e.preventDefault();
-      if(!value) return;
       addTodo(value);
+      
+        fetch('http://localhost:3001/', {
+            method: 'post',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+              text: value
+          })
+        })
+        .then(reponse => reponse.json)
+     
+      
       setValue('');
     }
 
@@ -48,7 +58,7 @@ function App() {
 
     return(
       <form onSubmit = {handleSubmit}>
-        <input style= {{width: '99.4%', padding: 0, height: 45, fontSize: 24}} placeholder = 'Enter in an item or message...' value = {value.text} onChange = { (e) =>setValue([e.target.value])} method = "post"/>
+        <input style= {{width: '99.7%', padding: 0, height: 45, fontSize: 24}} placeholder = 'Enter in an item or message...' value = {value.text} onChange = { (e) =>setValue([e.target.value])} method = "post" required/>
       </form>
       );
   }
@@ -59,7 +69,7 @@ function App() {
       <h1 className = 'header'> To-do list / chat log </h1>
     </div>
     <div className = 'todo-list'>
-      { todoText.map( (index, i) => <Display text = {index.text} completed = {index.completed} index = {i} key = {index.text} handleComplete = {completeTask} handleDelete = {deleteTask}/> )}
+      { todoText.map( (index,i) => <Display text = {index.text} index = {i} key ={i} completed = {index.completed} handleComplete = {completeTask} handleDelete = {deleteTask}/> )}
       <AddTodo addTodo={addTodo}/>
     </div>
   </div>

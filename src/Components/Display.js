@@ -6,6 +6,7 @@ export default function Display(props){
 	let time;
 	let dateYear = new Date();
 	dateYear = dateYear.getYear();
+	let meridiem = 'AM'
 	
 	const displayDate = () => {	
 		/*getYear() returns how many years have elapsed since 1900.
@@ -16,9 +17,11 @@ export default function Display(props){
 		time = time.splice(0, 2)
 		if (time[0] > 12){
 			time[0] %= 12
+			meridiem = 'PM'
 		}
-		return (date[0] + ' ' + time[0] + ':' + time[1]);
+		return (`${date[0]} ${time[0]}:${time[1]} ${meridiem}`);
 	}
+
 
 	return (
 		<div id= "main" style = {{ 
@@ -36,7 +39,7 @@ export default function Display(props){
 			</div>
 			<br></br>
 			<div className = 'todo-text'> 
-				{props.text}  
+				{props.text}
 			</div>
 		</div>
 	);
