@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/react-hooks/static/css/main.142afb0f.chunk.css",
-    "main.js": "/react-hooks/static/js/main.a67b51a1.chunk.js",
-    "main.js.map": "/react-hooks/static/js/main.a67b51a1.chunk.js.map",
+    "main.css": "/react-hooks/static/css/main.f1024178.chunk.css",
+    "main.js": "/react-hooks/static/js/main.2436a57b.chunk.js",
+    "main.js.map": "/react-hooks/static/js/main.2436a57b.chunk.js.map",
     "runtime-main.js": "/react-hooks/static/js/runtime-main.b4c7a8fc.js",
     "runtime-main.js.map": "/react-hooks/static/js/runtime-main.b4c7a8fc.js.map",
-    "static/js/2.864380c1.chunk.js": "/react-hooks/static/js/2.864380c1.chunk.js",
-    "static/js/2.864380c1.chunk.js.map": "/react-hooks/static/js/2.864380c1.chunk.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/react-hooks/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.d5099a46.chunk.js": "/react-hooks/static/js/2.d5099a46.chunk.js",
+    "static/js/2.d5099a46.chunk.js.map": "/react-hooks/static/js/2.d5099a46.chunk.js.map",
     "index.html": "/react-hooks/index.html",
-    "precache-manifest.a395ca81d97c49ae44c46679770b9276.js": "/react-hooks/precache-manifest.a395ca81d97c49ae44c46679770b9276.js",
+    "precache-manifest.a5de36277a1ea17dffcf2ab99ae2d94e.js": "/react-hooks/precache-manifest.a5de36277a1ea17dffcf2ab99ae2d94e.js",
     "service-worker.js": "/react-hooks/service-worker.js",
-    "static/css/main.142afb0f.chunk.css.map": "/react-hooks/static/css/main.142afb0f.chunk.css.map",
-    "static/js/2.864380c1.chunk.js.LICENSE.txt": "/react-hooks/static/js/2.864380c1.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/react-hooks/static/media/white-walls-1764702.dd7111e0.jpg"
+    "static/css/2.af3c1da9.chunk.css.map": "/react-hooks/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.f1024178.chunk.css.map": "/react-hooks/static/css/main.f1024178.chunk.css.map",
+    "static/js/2.d5099a46.chunk.js.LICENSE.txt": "/react-hooks/static/js/2.d5099a46.chunk.js.LICENSE.txt",
+    "static/media/white-walls-1764702.jpg": "/react-hooks/static/media/white-walls-1764702.dd7111e0.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b4c7a8fc.js",
-    "static/js/2.864380c1.chunk.js",
-    "static/css/main.142afb0f.chunk.css",
-    "static/js/main.a67b51a1.chunk.js"
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.d5099a46.chunk.js",
+    "static/css/main.f1024178.chunk.css",
+    "static/js/main.2436a57b.chunk.js"
   ]
 }
