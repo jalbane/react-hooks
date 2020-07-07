@@ -27,7 +27,7 @@ export default function Display(props){
 		<div id= "main" style = {{ 
 						fontSize: 12,
 						border: 'solid 1px',
-						boxShadow: '0px 0px 4px',
+						boxShadow: '0px 5px 4px',
 						borderTop: 'none'
 					 }}>
 			{ props.completed 

@@ -1,7 +1,9 @@
 .App {
-  width: 100%;
+  height: 100vh;
+  background-image: url('white-walls-1764702.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
 }
-
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -12,6 +14,7 @@
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {
@@ -25,27 +28,24 @@
 .todo-list {
   position: relative;
   margin: auto;
-  white-space: pre;
-  background: #c6c6c6;
-  width: 35%;
+  background: #a9bcc7;
   padding: 1%;
   white-space: pre-line;
   margin-bottom: 5px;
   border: solid black 1px;
-  box-shadow: 0px 3px 4px;
+  box-shadow: 0px 5px 4px;
   border-top-style: none;
 }
 
-.header{
-  background-color: whitesmoke;
-  width: 20%;
-  margin-left: 31.5%; /*width of .todo-list minus the padding(1% of 35)*/
-  text-align: center;
-  margin-bottom: 0px;
-  border-bottom: solid black 1px;
-}
-
 .banner{
-  width: 100%;
+  margin-top: 5vh;
+  background-color: #a9bcc7;
+  border: solid black 1px;
+  box-shadow: 1px 0px 3px;
+  border-top-style: none;
+  border-bottom-style: none;
 }
 
+div.col-sm-12{
+  padding: 0px;
+}

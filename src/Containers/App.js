@@ -1,6 +1,11 @@
 import React, {useState} from 'react';
 import '../App.css';
 import Display from '../Components/Display';
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+import image from '../white-walls-1764702.jpg'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [todoText, setTodoText] = useState([]);
@@ -50,29 +55,35 @@ function App() {
       setValue('');
     }
 
-    React.useEffect( () => {
-      localStorage.setItem('myValueInLocalStorage', value);
-    }, [value]);
-
     const onChange = event => setValue(event.target.value);
 
     return(
-      <form onSubmit = {handleSubmit}>
-        <input style= {{width: '99.7%', padding: 0, height: 45, fontSize: 24}} placeholder = 'Enter in an item or message...' value = {value.text} onChange = { (e) =>setValue([e.target.value])} method = "post" required/>
-      </form>
-      );
+      <Container fluid = "sm">
+        <Row sm = {12}>
+          <Col sm = {12}>
+            <form onSubmit = {handleSubmit}>
+              <input style= {{ marginTop: 10, width: '100%',height: 45, fontSize: 24}} placeholder = 'Enter in an item or message...' value = {value.text} onChange = { (e) =>setValue([e.target.value])} method = "post" required/>
+            </form>
+          </Col>
+        </Row>
+      </Container>
+    );
   }
  
   return (
-  <div className = 'App'>
-    <div className = 'banner'>
-      <h1 className = 'header'> To-do list / chat log </h1>
+    <div className = 'App'>
+      <Container fluid = "sm">
+        <Row sm = {12}>
+          <Col className = 'banner' sm = {{span: 3}}><h3> Chat log / to-do list </h3></Col>
+        </Row>
+        <Row sm = {12} className = 'todo-list'>
+          <Col sm = {{span: 10, offset: 1}}>
+            { todoText.map( (index,i) => <Display text = {index.text} index = {i} key ={i} completed = {index.completed} handleComplete = {completeTask} handleDelete = {deleteTask}/> )}
+            <AddTodo addTodo={addTodo}/>
+          </Col>
+        </Row>
+      </Container>
     </div>
-    <div className = 'todo-list'>
-      { todoText.map( (index,i) => <Display text = {index.text} index = {i} key ={i} completed = {index.completed} handleComplete = {completeTask} handleDelete = {deleteTask}/> )}
-      <AddTodo addTodo={addTodo}/>
-    </div>
-  </div>
   );
 }
 
